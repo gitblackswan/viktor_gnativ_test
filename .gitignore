@@ -46,6 +46,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+**/backstop_data/**
+
+**/bower_components/**
 **/w3cErrors/**
 **validation-report.json**
 **validation-status.json**
