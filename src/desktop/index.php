@@ -4,7 +4,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=1200">
-        <title>МАГИЯ ДЕКОРА</title>
+        <title>Document</title>
         <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
         <script>
             if (screen.width <= 750) {
