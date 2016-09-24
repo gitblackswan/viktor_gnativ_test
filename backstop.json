@@ -43,7 +43,7 @@
   ],
   "scenarios": [
     {
-      "label": "desktop_version",
+      "label": "all_version",
       "url": "http://localhost/GITHUB/shtory/src/",
       "hideSelectors": [],
       "removeSelectors": [],
@@ -53,8 +53,8 @@
       "readyEvent": null,
       "delay": 5000,
       "misMatchThreshold" : 0.1,
-      "onBeforeScript": "onBeforeDesctop.js",
-      "onReadyScript": "onReady.js"
+      "onBeforeScript": "change_user_agent_tablet_mobile.js",
+      "onReadyScript": "viewport_scale_mobile_tablet.js"
     }
   ],
   "paths": {

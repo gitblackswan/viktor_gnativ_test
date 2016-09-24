@@ -46,7 +46,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-**/backstop_data/**
+
+**/backstop_data/bitmaps_test/**
+**/backstop_data/bitmaps_reference/**
 
 **/bower_components/**
 **/w3cErrors/**
