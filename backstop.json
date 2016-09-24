@@ -1,0 +1,71 @@
+{
+  "viewports": [
+    {
+      "name": "mobile_viewport_iphone_v_480x850",
+      "width": 480,
+      "height": 850
+    },
+    {
+      "name": "mobile_viewport_table_v_768x1024",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "mobile_viewport_table_h_1024x768",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "name": "mobile_viewport_ipad_v_800x1024",
+      "width": 800,
+      "height": 1024
+    },
+    {
+      "name": "mobile_viewport_ipad_h_1024x800",
+      "width": 1024,
+      "height": 800
+    },
+    {
+      "name": "desktop_viewport_desktop_1280x860(1280x1024)",
+      "width": 1280,
+      "height": 860
+    },
+    {
+      "name": "desktop_viewport_desktop_1366x600(1366x768)",
+      "width": 1366,
+      "height": 600
+    },
+    {
+      "name": "desktop_viewport_desktop_1920x900(1920x1080)",
+      "width": 1920,
+      "height": 900
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "desktop_version",
+      "url": "http://localhost/GITHUB/shtory/src/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "body"
+      ],
+      "readyEvent": null,
+      "delay": 5000,
+      "misMatchThreshold" : 0.1,
+      "onBeforeScript": "onBeforeDesctop.js",
+      "onReadyScript": "onReady.js"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "../../backstop_data/bitmaps_reference",
+    "bitmaps_test": "../../backstop_data/bitmaps_test",
+    "compare_data": "../../backstop_data/bitmaps_test/compare.json",
+    "casper_scripts": "../../backstop_data/casper_scripts"
+  },
+  "engine": "slimerjs",
+  "report": ["CLI", "browser"],
+  "casperFlags": [],
+  "debug": false,
+  "port": 3001
+}

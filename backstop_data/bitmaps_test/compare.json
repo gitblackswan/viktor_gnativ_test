@@ -1,0 +1,71 @@
+{
+  "compareConfig": {
+    "testPairs": [
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_0_mobile_viewport_iphone_v_480x850.png",
+        "test": "../../backstop_data/bitmaps_test/20160914-173150/0_0_body_0_mobile_viewport_iphone_v_480x850.png",
+        "selector": "body",
+        "fileName": "0_0_body_0_mobile_viewport_iphone_v_480x850.png",
+        "label": "desktop_version",
+        "misMatchThreshold": 0.1
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_1_mobile_viewport_table_v_768x1024.png",
+        "test": "../../backstop_data/bitmaps_test/20160914-173150/0_0_body_1_mobile_viewport_table_v_768x1024.png",
+        "selector": "body",
+        "fileName": "0_0_body_1_mobile_viewport_table_v_768x1024.png",
+        "label": "desktop_version",
+        "misMatchThreshold": 0.1
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_2_mobile_viewport_table_h_1024x768.png",
+        "test": "../../backstop_data/bitmaps_test/20160914-173150/0_0_body_2_mobile_viewport_table_h_1024x768.png",
+        "selector": "body",
+        "fileName": "0_0_body_2_mobile_viewport_table_h_1024x768.png",
+        "label": "desktop_version",
+        "misMatchThreshold": 0.1
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_3_mobile_viewport_ipad_v_800x1024.png",
+        "test": "../../backstop_data/bitmaps_test/20160914-173150/0_0_body_3_mobile_viewport_ipad_v_800x1024.png",
+        "selector": "body",
+        "fileName": "0_0_body_3_mobile_viewport_ipad_v_800x1024.png",
+        "label": "desktop_version",
+        "misMatchThreshold": 0.1
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_4_mobile_viewport_ipad_h_1024x800.png",
+        "test": "../../backstop_data/bitmaps_test/20160914-173150/0_0_body_4_mobile_viewport_ipad_h_1024x800.png",
+        "selector": "body",
+        "fileName": "0_0_body_4_mobile_viewport_ipad_h_1024x800.png",
+        "label": "desktop_version",
+        "misMatchThreshold": 0.1
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_5_desktop_viewport_desktop_1280x860(1280x1024).png",
+        "test": "../../backstop_data/bitmaps_test/20160914-173150/0_0_body_5_desktop_viewport_desktop_1280x860(1280x1024).png",
+        "selector": "body",
+        "fileName": "0_0_body_5_desktop_viewport_desktop_1280x860(1280x1024).png",
+        "label": "desktop_version",
+        "misMatchThreshold": 0.1
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_6_desktop_viewport_desktop_1366x600(1366x768).png",
+        "test": "../../backstop_data/bitmaps_test/20160914-173150/0_0_body_6_desktop_viewport_desktop_1366x600(1366x768).png",
+        "selector": "body",
+        "fileName": "0_0_body_6_desktop_viewport_desktop_1366x600(1366x768).png",
+        "label": "desktop_version",
+        "misMatchThreshold": 0.1
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_body_7_desktop_viewport_desktop_1920x900(1920x1080).png",
+        "test": "../../backstop_data/bitmaps_test/20160914-173150/0_0_body_7_desktop_viewport_desktop_1920x900(1920x1080).png",
+        "selector": "body",
+        "fileName": "0_0_body_7_desktop_viewport_desktop_1920x900(1920x1080).png",
+        "label": "desktop_version",
+        "misMatchThreshold": 0.1
+      }
+    ]
+  },
+  "lastConfigHash": "a5d28cefc6802506676c9f9a2109a4db18a72d4c"
+}
