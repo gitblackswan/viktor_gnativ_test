@@ -46,14 +46,13 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+validation-report.json
+validation-status.json
 
-**/backstop_data/bitmaps_test/**
-**/backstop_data/bitmaps_reference/**
+**/backstop_data/**
 
 **/bower_components/**
 **/w3cErrors/**
-**validation-report.json**
-**validation-status.json**
 **/node_modules/**
 **.DS_Store**
 **Thumbs.db**

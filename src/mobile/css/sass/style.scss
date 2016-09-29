@@ -56,6 +56,21 @@ section{
     background: url(../maket.jpg) no-repeat top center;
     height: 13200px;
     opacity: 0.5;
-    z-index: 10;  
+    z-index: 10;
+}
+.buratino{
+	h1{
+		@include ibw();
+		span{
+			
+			font-size:48px;
+			height: 600px;
+			line-height:600px;
+			text-align:center;
+			margin-left: 50px;
+			margin-right: 50px;
+			text-transform: uppercase;
+		}
+	}
 }
 

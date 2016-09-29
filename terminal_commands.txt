@@ -28,15 +28,3 @@ npm install grunt-htmlcomb --save-dev
 npm install grunt-prettify --save-dev
 npm install grunt-sass --save-dev 
 npm install grunt-jsbeautifier --save-dev
-
-npm install casperjs
-bower install backstopjs
-cd bower_components/backstopjs
-npm install
-npm install slimerjs
-cd ../../
-
-
-
-cd bower_components/backstopjs
-npm run start

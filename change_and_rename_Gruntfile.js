@@ -4,14 +4,17 @@ module.exports = function(grunt) {
 
     var tablet = false;
 
-    var ft_folder = '4call/';
-    
+    var adaptive = true;    
 
 
+    var ft_target = 'src/desktop/';
+    var ft_folder = 'webdone.info/www/standarts/';
+    var ft_host = 'webdone.ftp.ukraine.com.ua';
     
+   
     var dist_valid_array = ['dist/index.php'];  
 
-    var src_valid_array = ['src/desctop/index.php'];  
+    var src_valid_array = ['src/desktop/index.php'];  
 
     if(tablet){
         dist_valid_array.push('dist/tablet/index.php');
@@ -28,7 +31,7 @@ module.exports = function(grunt) {
     grunt.option("force", true);
 
     grunt.registerTask('unusedimages', function(test) {
-        if (test == 'desctop') {
+        if (test == 'desktop') {
             var i_cwd = 'dist/img/';
             var i_expand = ['dist/index.php','dist/ajax/*.html', 'dist/css/full.min.css', 'dist/js/main.min.js', 'dist/js/map.min.js'];
         }
@@ -77,8 +80,8 @@ module.exports = function(grunt) {
 
 
         jsbeautifier: {
-            desctop: {
-                src : ["src/desctop/js/main.js","src/desctop/js/init.js","src/desctop/js/map.js"]
+            desktop: {
+                src : ["src/desktop/js/main.js","src/desktop/js/init.js","src/desktop/js/map.js"]
             },          
             tablet: {
                 src : ["src/tablet/js/main.js","src/tablet/js/init.js","src/tablet/js/map.js"]
@@ -90,8 +93,8 @@ module.exports = function(grunt) {
 
 
         csslint: {
-          desctop: {
-            src: ['src/desctop/css/*.css']
+          desktop: {
+            src: ['src/desktop/css/*.css']
           },
           tablet: {
             src: ['src/tablet/css/*.css']
@@ -103,12 +106,12 @@ module.exports = function(grunt) {
 
 
         csscomb: {
-            desctop: {
+            desktop: {
                 files: {
-                    'src/desctop/css/style.css': ['src/desctop/css/style.css'],
-                    'src/desctop/css/media.css': ['src/desctop/css/media.css'],
-                    'src/desctop/css/head.css': ['src/desctop/css/head.css'],
-                    'src/desctop/css/scripts.css': ['src/desctop/css/scripts.css'],
+                    'src/desktop/css/style.css': ['src/desktop/css/style.css'],
+                    'src/desktop/css/media.css': ['src/desktop/css/media.css'],
+                    'src/desktop/css/head.css': ['src/desktop/css/head.css'],
+                    'src/desktop/css/scripts.css': ['src/desktop/css/scripts.css'],
                 }
             },
             tablet: {
@@ -131,13 +134,13 @@ module.exports = function(grunt) {
 
 
         htmlcomb: {
-            desctop: {
+            desktop: {
                 options: {
                     removeEmptyValue: false
                 },
                 files: {
-                    'src/desctop/index.php': ['src/desctop/index.php'],                    
-                    'src/desctop/ajax/map.html': ['src/desctop/ajax/map.html']
+                    'src/desktop/index.php': ['src/desktop/index.php'],                    
+                    'src/desktop/ajax/map.html': ['src/desktop/ajax/map.html']
                 }
             },
             tablet: {
@@ -176,10 +179,10 @@ module.exports = function(grunt) {
                     "br"
                 ]
             },
-            desctop: {
+            desktop: {
                 files: {
-                    'src/desctop/index.php': ['src/desctop/index.php'],                    
-                    'src/desctop/ajax/map.html': ['src/desctop/ajax/map.html']
+                    'src/desktop/index.php': ['src/desktop/index.php'],                    
+                    'src/desktop/ajax/map.html': ['src/desktop/ajax/map.html']
                 }
             },
             tablet: {
@@ -197,35 +200,35 @@ module.exports = function(grunt) {
         },
 
         criticalcss: {
-            desctop: {
+            desktop: {
                 options: {
-                    url: "src/desctop/index_fc.html",
+                    url: "src/desktop/index_fc.html",
                     width: 1200,
                     height: 900,
-                    outputfile: "src/desctop/css/bp/critical.css",
-                    filename: "src/desctop/css/full.css",
+                    outputfile: "src/desktop/css/bp/critical.css",
+                    filename: "src/desktop/css/full.css",
                     //buffer: 1200 * 1920,
                     ignoreConsole: false
                 }
             },
-            desctop_tab: {
+            desktop_tab: {
                 options: {
-                    url: "src/desctop/index_fc.html",
+                    url: "src/desktop/index_fc.html",
                     width: 800,
                     height: 1024,
-                    outputfile: "src/desctop/css/bp/critical_t.css",
-                    filename: "src/desctop/css/full.css",
+                    outputfile: "src/desktop/css/bp/critical_t.css",
+                    filename: "src/desktop/css/full.css",
                     //buffer: 1200 * 1920,
                     ignoreConsole: false
                 }
             },
-            desctop_mob: {
+            desktop_mob: {
                 options: {
-                    url: "src/desctop/index_fc.html",
+                    url: "src/desktop/index_fc.html",
                     width: 340,
                     height: 1024,
-                    outputfile: "src/desctop/css/bp/critical_m.css",
-                    filename: "src/desctop/css/full.css",
+                    outputfile: "src/desktop/css/bp/critical_m.css",
+                    filename: "src/desktop/css/full.css",
                     //buffer: 1200 * 1920,
                     ignoreConsole: false
                 }
@@ -256,7 +259,7 @@ module.exports = function(grunt) {
 
 
         inlineImgSize: {
-            desctop: {
+            desktop: {
                 files: {
                     src: ['dist/index.php']
                 }
@@ -295,34 +298,34 @@ module.exports = function(grunt) {
 
 
         copy: {
-            desctop_for_critical: {
-                src: 'src/desctop/index.*',
-                dest: 'src/desctop/index_fc.html',
+            desktop_for_critical: {
+                src: 'src/desktop/index.*',
+                dest: 'src/desktop/index_fc.html',
             },
-            desctop_index: {
+            desktop_index: {
                 expand: true,
                 flatten: true,
-                cwd: 'src/desctop/',
+                cwd: 'src/desktop/',
                 src: '*.*',
                 dest: 'dist/',
             },
-            desctop_httaccess: {
+            desktop_httaccess: {
                 expand: true,
                 flatten: true,
-                src: 'src/desctop/.htaccess',
+                src: 'src/desktop/.htaccess',
                 dest: 'dist/',
             },
-            desctop_ajax: {
+            desktop_ajax: {
                 expand: true,
                 flatten: true,
-                cwd: 'src/desctop/ajax/',
+                cwd: 'src/desktop/ajax/',
                 src: '**',
                 dest: 'dist/ajax/',
             },
-            desctop_fonts: {
+            desktop_fonts: {
                 expand: true,
                 flatten: true,
-                cwd: 'src/desctop/fonts/',
+                cwd: 'src/desktop/fonts/',
                 src: '**',
                 dest: 'dist/fonts/',
             },
@@ -333,17 +336,17 @@ module.exports = function(grunt) {
                 src: '**',
                 dest: 'dist/track/',
             },
-            desctop_libs_js: {
-                src: 'src/desctop/js/libs.js',
+            desktop_libs_js: {
+                src: 'src/desktop/js/libs.js',
                 dest: 'dist/js/libs.min.js',
             },
-            desctop_fonts_css: {
-                src: 'src/desctop/css/fonts.css',
+            desktop_fonts_css: {
+                src: 'src/desktop/css/fonts.css',
                 dest: 'dist/css/fonts.css',
             },
-            desctop_bp_init_js: {
-                src: 'src/desctop/js/init.js',
-                dest: 'src/desctop/js/bp/init.js',
+            desktop_bp_init_js: {
+                src: 'src/desktop/js/init.js',
+                dest: 'src/desktop/js/bp/init.js',
             },
             tablet_for_critical: {
                 src: 'src/tablet/index.*',
@@ -435,7 +438,7 @@ module.exports = function(grunt) {
 
 
         htmlmin: {
-            desctop: {
+            desktop: {
                 options: {
                     removeComments: true,
                     collapseWhitespace: true,
@@ -479,7 +482,7 @@ module.exports = function(grunt) {
                 force: true
             },
 
-            desctop: ['src/desctop/index_fc.html','src/desctop/css/full.css', 'src/desctop/css/bp', 'src/desctop/css/ap', 'src/desctop/js/bp'],
+            desktop: ['src/desktop/index_fc.html','src/desktop/css/full.css', 'src/desktop/css/bp', 'src/desktop/css/ap', 'src/desktop/js/bp'],
             tablet: ['src/tablet/index_fc.html','src/tablet/css/full.css', 'src/tablet/css/bp', 'src/tablet/css/ap', 'src/tablet/js/bp'],
             mobile: ['src/mobile/index_fc.html','src/mobile/css/full.css', 'src/mobile/css/bp', 'src/mobile/css/ap', 'src/mobile/js/bp']
 
@@ -487,7 +490,7 @@ module.exports = function(grunt) {
 
 
         'string-replace': {
-            desctop_rebase: {
+            desktop_rebase: {
                 files: {
                     './': ['dist/js/init.min.js', 'dist/index.*', 'dist/ajax/map.html']
                 },
@@ -522,7 +525,7 @@ module.exports = function(grunt) {
                     }]
                 }
             },
-            desctop_beforebase: {
+            desktop_beforebase: {
                 files: {
                     './': 'dist/css/head.min.css'
                 },
@@ -533,7 +536,7 @@ module.exports = function(grunt) {
                     }]
                 }
             },
-            desctop_afterbase: {
+            desktop_afterbase: {
                 files: {
                     './': ['dist/css/head.min.css']
                 },
@@ -544,9 +547,9 @@ module.exports = function(grunt) {
                     }]
                 }
             },
-            desctop_remove_img_from_head: {
+            desktop_remove_img_from_head: {
                 files: {
-                    './': 'src/desctop/css/bp/critical.css'
+                    './': 'src/desktop/css/bp/critical.css'
                 },
                 options: {
                     replacements: [{
@@ -558,7 +561,7 @@ module.exports = function(grunt) {
                     }]
                 }
             },
-            desctop_for_lazyload: {
+            desktop_for_lazyload: {
                 files: {
                     './': ['dist/index.php', 'dist/js/main.min.js']
                 },
@@ -578,9 +581,9 @@ module.exports = function(grunt) {
                     }]
                 }
             },
-            desctop_async_css: {
+            desktop_async_css: {
                 files: {
-                    './': ['src/desctop/js/bp/init.js']
+                    './': ['src/desktop/js/bp/init.js']
                 },
                 options: {
                     replacements: [{
@@ -589,7 +592,7 @@ module.exports = function(grunt) {
                     }]
                 }
             },
-            desctop_async_init: {
+            desktop_async_init: {
                 files: {
                     './': ['dist/index.php']
                 },
@@ -600,7 +603,7 @@ module.exports = function(grunt) {
                     }]
                 }
             },
-            desctop_remove_link_css: {
+            desktop_remove_link_css: {
                 files: {
                     './': ['dist/index.php']
                 },
@@ -611,7 +614,7 @@ module.exports = function(grunt) {
                     }]
                 }
             },
-            desctop_remove_sync_init: {
+            desktop_remove_sync_init: {
                 files: {
                     './': ['dist/index.php']
                 },
@@ -646,7 +649,7 @@ module.exports = function(grunt) {
                         pattern: /head.css/ig,
                         replacement: 'head.min.css'
                     }, {
-                        pattern: /..\/desctop/ig,
+                        pattern: /..\/desktop/ig,
                         replacement: '../'
                     }]
                 }
@@ -775,7 +778,7 @@ module.exports = function(grunt) {
                         pattern: /head.css/ig,
                         replacement: 'head.min.css'
                     }, {
-                        pattern: /..\/desctop/ig,
+                        pattern: /..\/desktop/ig,
                         replacement: '../'
                     }]
                 }
@@ -884,7 +887,7 @@ module.exports = function(grunt) {
 
 
         dataUri: {
-            desctop: {
+            desktop: {
                 src: ['dist/css/full.min.css', 'dist/css/head.min.css'], 
                 dest: 'dist/css/',
                 options: {
@@ -903,7 +906,7 @@ module.exports = function(grunt) {
                     maxBytes: 2048
 
                 }
-            }
+            },
             mobile: {
                 src: ['dist/mobile/css/full.min.css', 'dist/mobile/css/head.min.css'], 
                 dest: 'dist/mobile/css/',
@@ -918,21 +921,21 @@ module.exports = function(grunt) {
 
 
         concat: {
-            desctop_libs_js: {
-                src: 'src/desctop/js/libs/*.js',
-                dest: 'src/desctop/js/libs.js'
+            desktop_libs_js: {
+                src: 'src/desktop/js/libs/*.js',
+                dest: 'src/desktop/js/libs.js'
             },
-            desctop_libs_css: {
-                src: 'src/desctop/css/libs/*.css',
-                dest: 'src/desctop/css/libs.css'
+            desktop_libs_css: {
+                src: 'src/desktop/css/libs/*.css',
+                dest: 'src/desktop/css/libs.css'
             },
-            desctop_full_css: {
-                src: ['src/desctop/css/libs.css', 'src/desctop/css/style.css', 'src/desctop/css/media.css', 'src/desctop/css/scripts.css'],
-                dest: 'src/desctop/css/full.css'
+            desktop_full_css: {
+                src: ['src/desktop/css/libs.css', 'src/desktop/css/style.css', 'src/desktop/css/media.css', 'src/desktop/css/scripts.css'],
+                dest: 'src/desktop/css/full.css'
             },
-            desctop_head_css: {
-                src: ['src/desctop/css/head.css', 'src/desctop/css/bp/critical.css'],
-                dest: 'src/desctop/css/bp/head.css'
+            desktop_head_css: {
+                src: ['src/desktop/css/head.css', 'src/desktop/css/bp/critical.css'],
+                dest: 'src/desktop/css/bp/head.css'
             },
             tablet_libs_js: {
                 src: 'src/tablet/js/libs/*.min.js',
@@ -967,19 +970,19 @@ module.exports = function(grunt) {
                 dest: 'src/mobile/css/bp/head.css'
             },
             allcritical: {
-                src: ['src/desctop/css/bp/critical.css', 'src/desctop/css/bp/critical_t.css','src/desctop/css/bp/critical_m.css'],
-                dest: 'src/desctop/css/bp/critical.css'
+                src: ['src/desktop/css/bp/critical.css', 'src/desktop/css/bp/critical_t.css','src/desktop/css/bp/critical_m.css'],
+                dest: 'src/desktop/css/bp/critical.css'
             }
         },
 
 
         cssmin: {
-            desctop: {
+            desktop: {
                 files: [{
-                        src: 'src/desctop/css/ap/head.css',
+                        src: 'src/desktop/css/ap/head.css',
                         dest: 'dist/css/head.min.css'
                     }, {
-                        src: 'src/desctop/css/ap/full.css',
+                        src: 'src/desktop/css/ap/full.css',
                         dest: 'dist/css/full.min.css'
                     }]
             },
@@ -1010,21 +1013,21 @@ module.exports = function(grunt) {
                     drop_console: true
                 }
             },
-            desctop_src: {
+            desktop_src: {
                 files: [{
-                    'dist/js/init.min.js': 'src/desctop/js/bp/init.js'
+                    'dist/js/init.min.js': 'src/desktop/js/bp/init.js'
                 }, {
-                    'dist/js/main.min.js': 'src/desctop/js/main.js'
+                    'dist/js/main.min.js': 'src/desktop/js/main.js'
                 }, {
-                    'dist/js/map.min.js': 'src/desctop/js/map.js'
+                    'dist/js/map.min.js': 'src/desktop/js/map.js'
                 }]
             },
-            desctop_libs: {
+            desktop_libs: {
                 files: [{
                     expand: true,
-                    cwd: 'src/desctop/js/libs/',
+                    cwd: 'src/desktop/js/libs/',
                     src: '**/*.js',
-                    dest: 'src/desctop/js/libs/'
+                    dest: 'src/desktop/js/libs/'
                 }]
             },
             tablet_src: {
@@ -1065,12 +1068,12 @@ module.exports = function(grunt) {
 
 
         sass: {
-            desctop: {
+            desktop: {
                 options: {
                     sourceMap: true
                 },
                 files: {
-                    'src/desctop/css/style.css': 'src/desctop/css/sass/style.scss'
+                    'src/desktop/css/style.css': 'src/desktop/css/sass/style.scss'
                 }
             },
             tablet: {
@@ -1093,10 +1096,10 @@ module.exports = function(grunt) {
 
 
         imagemin: {
-            desctop: {
+            desktop: {
                 files: [{
                         expand: true,
-                        cwd: 'src/desctop/img/',
+                        cwd: 'src/desktop/img/',
                         src: ['**/*.{png,jpg,gif}'],
                         dest: 'dist/img/'
                     }]
@@ -1124,11 +1127,11 @@ module.exports = function(grunt) {
             options: {
                 browsers: ['ie >= 8', 'last 10 versions', '> 0.1%', 'ff >= 20', 'Android > 1']
             },
-            desctop: {
+            desktop: {
                 files: [{
-                        'src/desctop/css/ap/full.css': 'src/desctop/css/full.css'
+                        'src/desktop/css/ap/full.css': 'src/desktop/css/full.css'
                     }, {
-                        'src/desctop/css/ap/head.css': 'src/desctop/css/bp/head.css'
+                        'src/desktop/css/ap/head.css': 'src/desktop/css/bp/head.css'
                     }]
             },
             tablet: {
@@ -1150,11 +1153,11 @@ module.exports = function(grunt) {
         ftpush: {
             build: {
                 auth: {
-                    host: '31.170.165.128',
+                    host: ft_host,
                     port: 21,
-                    authKey: "key2"
+                    authKey: "key1"
                 },
-                src: 'dist/',
+                src: ft_target,
                 dest: ft_folder,
                 exclusions: [
                     '**/.DS_Store',
@@ -1163,12 +1166,10 @@ module.exports = function(grunt) {
             }
         },
 
-
-
         watch: {
-            desctop_sass: {
-                files: 'src/desctop/css/sass/*.scss',
-                tasks: ['sass:desctop']
+            desktop_sass: {
+                files: 'src/desktop/css/sass/*.scss',
+                tasks: ['sass:desktop']
             },
             tablet_sass: {
                 files: 'src/tablet/css/sass/*.scss',
@@ -1178,9 +1179,9 @@ module.exports = function(grunt) {
                 files: 'src/mobile/css/sass/*.scss',
                 tasks: ['sass:mobile']
             },
-            desctop_concat_libs_css: {
-                files: ['src/desctop/css/libs/*.css'],
-                tasks: ['concat:desctop_libs_css'],
+            desktop_concat_libs_css: {
+                files: ['src/desktop/css/libs/*.css'],
+                tasks: ['concat:desktop_libs_css'],
             },
             tablet_concat_libs_css: {
                 files: ['src/tablet/css/libs/*.css'],
@@ -1190,9 +1191,9 @@ module.exports = function(grunt) {
                 files: ['src/mobile/css/libs/*.css'],
                 tasks: ['concat:mobile_libs_css'],
             },
-            desctop_concat_libs_js: {
-                files: ['src/desctop/js/libs/*.js'],
-                tasks: ['concat:desctop_libs_js'],
+            desktop_concat_libs_js: {
+                files: ['src/desktop/js/libs/*.js'],
+                tasks: ['concat:desktop_libs_js'],
             },
             tablet_concat_libs_js: {
                 files: ['src/tablet/js/libs/*.js'],
@@ -1227,15 +1228,16 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-jsbeautifier");
     grunt.loadNpmTasks('grunt-contrib-csslint');
 
-    grunt.registerTask('start-desctop', [
-        'uglify:desctop_libs', //Минификация src/desctop/js/libs/*.js
-        'concat:desctop_libs_js', //Склейка src/desctop/js/libs/*.js в src/desctop/js/libs.js
-        'concat:desctop_libs_css', //Склейка src/desctop/css/libs/*.css в src/desctop/css/libs.css
-        'csscomb:desctop', //beautify src/desctop/css/**/* 
-        'htmlcomb:desctop', //beautify src/desctop/index.php ,src/desctop/ajax/map.html часть1
-        'prettify:desctop', //beautify src/desctop/index.php ,src/desctop/ajax/map.html часть2
-        'jsbeautifier:desctop', //beautify (src/desctop/js/) init.js, main.js, map.js
-        //'csslint:desctop'
+
+    grunt.registerTask('start-desktop', [
+        'uglify:desktop_libs', //Минификация src/desktop/js/libs/*.js
+        'concat:desktop_libs_js', //Склейка src/desktop/js/libs/*.js в src/desktop/js/libs.js
+        'concat:desktop_libs_css', //Склейка src/desktop/css/libs/*.css в src/desktop/css/libs.css
+        'csscomb:desktop', //beautify src/desktop/css/**/* 
+        'htmlcomb:desktop', //beautify src/desktop/index.php ,src/desktop/ajax/map.html часть1
+        'prettify:desktop', //beautify src/desktop/index.php ,src/desktop/ajax/map.html часть2
+        'jsbeautifier:desktop', //beautify (src/desktop/js/) init.js, main.js, map.js
+        //'csslint:desktop'
     ]);
 
     grunt.registerTask('start-tablet', [
@@ -1257,50 +1259,50 @@ module.exports = function(grunt) {
         'htmlcomb:mobile',
         'prettify:mobile',
         'jsbeautifier:mobile',
-        //'csslint:desctop'
+        //'csslint:desktop'
     ]);
 
-var critical_array = ['criticalcss:desctop'];
+var critical_array = ['criticalcss:desktop'];
 
-if(!mobile&&!tablet){
-    critical_array.push('criticalcss:desctop_tab');
-    critical_array.push('criticalcss:desctop_mob');
+if(!mobile&&!tablet&&adaptive){
+    critical_array.push('criticalcss:desktop_tab');
+    critical_array.push('criticalcss:desktop_mob');
     critical_array.push('concat:allcritical');
 }
     
     grunt.registerTask('critical-dtm',critical_array);
 
 
-    grunt.registerTask('fin-desctop', [
-        'concat:desctop_full_css', //Склейка (src/desctop/css/) libs.css,style.css,media.css,scripts.css, в src/desctop/css/full.css
-        'copy:desctop_for_critical', //Копия (src/desctop/) index.* в кеш файл index_fc.html для выдиление критического css
-        'critical-dtm', //Выделение критического css для src/desctop/index_fc.html с src/desctop/css/full.css в src/desctop/css/bp/critical.css 
-        'string-replace:desctop_remove_img_from_head', //Удаление всех графических ресурсов с src/desctop/css/bp/critical.css
-        'concat:desctop_head_css', // Склейка src/desctop/css/head.css и src/desctop/css/bp/critical.css в src/desctop/css/bp/head.css
-        'autoprefixer:desctop', //autoprefix src/desctop/css/full.css в src/desctop/css/ap/full.css, src/desctop/css/bp/head.css в src/desctop/css/ap/head.css
-        'copy:desctop_bp_init_js', //Копирование src/desctop/js/init.js в src/desctop/js/bp/init.js для добавления асинхронной загрузки css
-        'string-replace:desctop_async_css', //Изменение src/desctop/js/bp/init.js для асинхронной загрузки css
-        'uglify:desctop_src', //Сжатие (src/desctop/js/) init.js, main.js, init.js в dist/js/*.min.js
-        'copy:desctop_libs_js', //Копирование src/desctop/js/libs.js в dist/js/libs.min.js
-        'cssmin:desctop', //Сжатие (src/desctop/css/ap/) head.css,full.css в dist/css/*.min.css
-        'imagemin:desctop', //Сжатие src/desctop/img/*.* в dist/img/
-        'clean:desctop', //Удаление src/desctop/index_fc.html,src/desctop/css/bp,src/desctop/css/ap,src/desctop/js/bp
-        'copy:desctop_fonts',
-        'copy:desctop_fonts_css',    
-        'copy:desctop_index', //Копирование src/desctop/*.* в dist/
-        'copy:desctop_httaccess', //Копирование src/desctop/.httaccess в dist/
-        'copy:desctop_ajax', //Копирование src/desctop/ajax/ в dist/ajax/
-        'string-replace:desctop_async_init', //добавления блока асинхронной инициализации в index.php
-        'string-replace:desctop_remove_sync_init', //Удаление синхронной инициализации в index.php
-        'string-replace:desctop_rebase', //Замена путей к track/ mobile/ tablet/ в dist/ версии desctop
-        'inlineImgSize:desctop', //Добавление width и height на img
-        'string-replace:desctop_for_lazyload', //замена установка lazy-load закгрузки <img> на dist/index.php
-        'string-replace:desctop_remove_link_css', //удаление link[rel="stylesheet"] из dist/index.php
-        'string-replace:desctop_beforebase', //замена путей /img->../img для base64uri маленьких картинок в dist/css/head.min.css
-        'dataUri:desctop', //перевод картинок до 2048 байт в base64uri в dist/css/head.min.css, dist/css/full.min.css
-        'string-replace:desctop_afterbase', //замена путей ../img->img непереведдных картинок в dist/css/head.min.css
-        'htmlmin:desctop', //сжатие dist/index.php и dist/ajax/map.html
-        'unusedimages:desctop', //Удаление неиспользованных картинок из dist/img/
+    grunt.registerTask('fin-desktop', [
+        'concat:desktop_full_css', //Склейка (src/desktop/css/) libs.css,style.css,media.css,scripts.css, в src/desktop/css/full.css
+        'copy:desktop_for_critical', //Копия (src/desktop/) index.* в кеш файл index_fc.html для выдиление критического css
+        'critical-dtm', //Выделение критического css для src/desktop/index_fc.html с src/desktop/css/full.css в src/desktop/css/bp/critical.css 
+        'string-replace:desktop_remove_img_from_head', //Удаление всех графических ресурсов с src/desktop/css/bp/critical.css
+        'concat:desktop_head_css', // Склейка src/desktop/css/head.css и src/desktop/css/bp/critical.css в src/desktop/css/bp/head.css
+        'autoprefixer:desktop', //autoprefix src/desktop/css/full.css в src/desktop/css/ap/full.css, src/desktop/css/bp/head.css в src/desktop/css/ap/head.css
+        'copy:desktop_bp_init_js', //Копирование src/desktop/js/init.js в src/desktop/js/bp/init.js для добавления асинхронной загрузки css
+        'string-replace:desktop_async_css', //Изменение src/desktop/js/bp/init.js для асинхронной загрузки css
+        'uglify:desktop_src', //Сжатие (src/desktop/js/) init.js, main.js, init.js в dist/js/*.min.js
+        'copy:desktop_libs_js', //Копирование src/desktop/js/libs.js в dist/js/libs.min.js
+        'cssmin:desktop', //Сжатие (src/desktop/css/ap/) head.css,full.css в dist/css/*.min.css
+        'imagemin:desktop', //Сжатие src/desktop/img/*.* в dist/img/
+        'clean:desktop', //Удаление src/desktop/index_fc.html,src/desktop/css/bp,src/desktop/css/ap,src/desktop/js/bp
+        'copy:desktop_fonts', 
+        'copy:desktop_fonts_css',    
+        'copy:desktop_index', //Копирование src/desktop/*.* в dist/
+        'copy:desktop_httaccess', //Копирование src/desktop/.httaccess в dist/
+        'copy:desktop_ajax', //Копирование src/desktop/ajax/ в dist/ajax/
+        'string-replace:desktop_async_init', //добавления блока асинхронной инициализации в index.php
+        'string-replace:desktop_remove_sync_init', //Удаление синхронной инициализации в index.php
+        'string-replace:desktop_rebase', //Замена путей к track/ mobile/ tablet/ в dist/ версии desktop
+        'inlineImgSize:desktop', //Добавление width и height на img
+        'string-replace:desktop_for_lazyload', //замена установка lazy-load закгрузки <img> на dist/index.php
+        'string-replace:desktop_remove_link_css', //удаление link[rel="stylesheet"] из dist/index.php
+        'string-replace:desktop_beforebase', //замена путей /img->../img для base64uri маленьких картинок в dist/css/head.min.css
+        'dataUri:desktop', //перевод картинок до 2048 байт в base64uri в dist/css/head.min.css, dist/css/full.min.css
+        'string-replace:desktop_afterbase', //замена путей ../img->img непереведдных картинок в dist/css/head.min.css
+        'htmlmin:desktop', //сжатие dist/index.php и dist/ajax/map.html
+        'unusedimages:desktop', //Удаление неиспользованных картинок из dist/img/
         'copy:track', //Копирование src/track/ в dist/track/
     ]);
 
@@ -1368,9 +1370,9 @@ if(!mobile&&!tablet){
         'unusedimages:mobile', 
     ]);
 
-    grunt.registerTask('check-desctop', [
-        'concat:desctop_libs_css', 
-        'csscomb:desctop'
+    grunt.registerTask('check-desktop', [
+        'concat:desktop_libs_css', 
+        'csscomb:desktop'
     ]);
 
     grunt.registerTask('check-tablet', [
@@ -1384,15 +1386,15 @@ if(!mobile&&!tablet){
     ]);
 
 
-var start_command = ['start-desctop'];
+var start_command = ['start-desktop'];
 
-var fin_array = ['start-desctop','fin-desctop'];
+var fin_array = ['start-desktop','fin-desktop'];
 
-var fin_command = ['fin-desctop'];
+var fin_command = ['fin-desktop'];
 
 var validate_command = ['validation'];
 
-var check_command = ['check-desctop'];
+var check_command = ['check-desktop'];
 
 if(tablet) {
     fin_command.push('fin-tablet');

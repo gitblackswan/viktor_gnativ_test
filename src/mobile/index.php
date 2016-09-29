@@ -24,8 +24,20 @@
         <?php include('../track/head.php'); ?>
 </head>
 <body>
-
-
+    
+    <section class="buratino">
+        <div>
+            <div>
+                <h1>
+                    <span>Бу</span>
+                    <span>ра</span>
+                    <span>ти</span>
+                    <span>но</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+        
 	
 
         <?php include('../track/body.php'); ?>
