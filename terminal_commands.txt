@@ -1,9 +1,9 @@
-cd ../../Volumes/Workspace/CACHE/GITHUB/grunt_standart
+cd ../../Volumes/Workspace/CACHE/GITHUB/standarts
 
 
-cd /d D:\WORKSPACE\GITHUB\kamin
+cd /d D:\WORKSPACE\GITHUB\standarts
 
-sudo npm install grunt --save-dev
+
 
 npm install grunt --save-dev
 npm install time-grunt --save
@@ -28,3 +28,10 @@ npm install grunt-htmlcomb --save-dev
 npm install grunt-prettify --save-dev
 npm install grunt-sass --save-dev 
 npm install grunt-jsbeautifier --save-dev
+
+
+
+
+bower install backstopjs
+cd bower_components/backstopjs
+npm install slimerjs

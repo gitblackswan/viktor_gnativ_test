@@ -1,29 +1,24 @@
 {
   "viewports": [
     {
-      "name": "mobile_viewport_iphone_v_480x850",
-      "width": 480,
+      "name": "mobile_viewport_iphone_5_320x570",
+      "width": 335,
+      "height": 570
+    },
+    {
+      "name": "mobile_viewport_iphone_6_480x850",
+      "width": 495,
       "height": 850
     },
     {
       "name": "mobile_viewport_table_v_768x1024",
-      "width": 768,
+      "width": 783,
       "height": 1024
     },
     {
       "name": "mobile_viewport_table_h_1024x768",
-      "width": 1024,
+      "width": 1039,
       "height": 768
-    },
-    {
-      "name": "mobile_viewport_ipad_v_800x1024",
-      "width": 800,
-      "height": 1024
-    },
-    {
-      "name": "mobile_viewport_ipad_h_1024x800",
-      "width": 1024,
-      "height": 800
     },
     {
       "name": "desktop_viewport_desktop_1280x860(1280x1024)",
@@ -39,6 +34,26 @@
       "name": "desktop_viewport_desktop_1920x900(1920x1080)",
       "width": 1920,
       "height": 900
+    },
+    {
+      "name": "desktop_viewport_desktop_2560x1280(2560x1100)",
+      "width": 2560,
+      "height": 1100
+    },
+    {
+      "name": "desktop_maket_desktop_1920x1200(1920x1110)",
+      "width": 1920,
+      "height": 1100
+    },
+    {
+      "name": "maket_desktop_1920x1100",
+      "width": 1920,
+      "height": 1100
+    },
+    {
+      "name": "maket_mobile_480x800",
+      "width": 495,
+      "height": 800
     }
   ],
   "scenarios": [
