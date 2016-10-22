@@ -319,7 +319,7 @@
 
 * Не использовать сокращенный(Универсальный) background, на замену ему background-color,background-image,background-repeat,background-position (android 4.4.1 bug)
 
-* Не использовать transform:translateX(),transform:translateY(),transform:translateZ(), на замену им transform:translate3d() (android 4.4.1, iOS8 bug NS)
+* Не использовать transform:translateX(),transform:translateY(),transform:translateZ(), на замену им transform:translate3d() (android 4.4.1, iOS8 bug [NS]:http://webdone.info/reporting/test/in.html)
 
 * При использовании background-size:cover в пределах правила должен стоять position:absolute/position:relative (android 4.4.1 bug)
 
