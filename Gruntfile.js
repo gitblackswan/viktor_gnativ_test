@@ -4,17 +4,17 @@ module.exports = function(grunt) {
 
     var tablet = false;
 
-    var adaptive = true;    
+    var adaptive = true;
 
 
     var ft_target = 'src/desktop/';
-    var ft_folder = 'webdone.info/www/standarts/';
-    var ft_host = 'webdone.ftp.ukraine.com.ua';
+    var ft_folder = '/public_html';
+    var ft_host = 'ftp.hnativ1.esy.es';
     
    
-    var dist_valid_array = ['dist/index.php'];  
+    var dist_valid_array = ['dist/index.html'];  
 
-    var src_valid_array = ['src/desktop/index.php'];  
+    var src_valid_array = ['src/desktop/index.html'];  
 
     if(tablet){
         dist_valid_array.push('dist/tablet/index.php');
