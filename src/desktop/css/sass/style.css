@@ -1,4 +1,4 @@
-/* line 51, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 50, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   background-position: center;
   background-repeat: no-repeat; }
 
-/* line 52, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 51, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 :after, :before {
   content: "";
   display: block;
@@ -14,11 +14,11 @@
   height: 0;
   clear: both; }
 
-/* line 53, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 52, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 sup:after, sup:before, a:after, a:before, br:after, br:before, img:after, img:before, span:after, span:before, table:after, table:before, td:after, td:before, tr:after, tr:before {
   content: none; }
 
-/* line 54, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 53, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 h1, h2, h3, h4, h5 {
   font-size: 1em;
   font-weight: inherit;
@@ -27,40 +27,39 @@ h1, h2, h3, h4, h5 {
   font-weight: 300;
   letter-spacing: 0.01em; }
 
-/* line 55, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 54, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 body {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #141414; }
+  font-weight: 400; }
 
-/* line 56, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 55, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 a {
   text-decoration: none;
   color: inherit;
   outline: 0 !important; }
 
-/* line 57, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 56, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 button, input, textarea {
   outline: none; }
 
-/* line 58, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 57, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 section {
   width: 100%;
-  min-width: 980px;
+  min-width: 970px;
   overflow: hidden;
   position: relative;
   z-index: 2;
   min-height: 600px;
   height: 100vh;
   background-size: cover !important; }
-  /* line 25, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 24, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   section > div {
-    max-width: 980px;
+    max-width: 970px;
     position: relative;
     z-index: 2;
     height: 100%;
     margin: 0 auto; }
-    /* line 31, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 30, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     section > div > div {
       width: 100%;
       position: absolute;
@@ -68,7 +67,7 @@ section {
       top: 50%;
       margin-top: -300px; }
 
-/* line 62, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 61, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 #maket {
   position: absolute;
   top: 0px;
@@ -79,63 +78,63 @@ section {
   opacity: 0.5;
   z-index: 10; }
 
-/* line 73, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 72, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 .section_f {
   background-image: url(../../img/section/item-1.jpg);
   background-position: center;
   background-repeat: no-repeat; }
 
-/* line 79, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+/* line 78, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
 .wrap_section_f {
   color: white; }
-  /* line 81, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 80, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_section_f .header_page {
     position: relative;
     z-index: 1;
     margin-bottom: 65px; }
-    /* line 85, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 84, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .header_page .menu {
       position: absolute;
-      left: 5px;
+      left: 0px;
       top: 20px;
       z-index: 1; }
-      /* line 90, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+      /* line 89, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
       .wrap_section_f .header_page .menu .menu_link {
         display: block;
         width: 26px;
         height: 20px;
         background-image: url(../../img/icon/menu.png);
         background-repeat: no-repeat; }
-    /* line 101, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 100, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .header_page .logo_page {
       display: block;
       margin: 0 auto;
       text-align: center;
       line-height: 1; }
-    /* line 109, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 108, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .header_page .tel_page {
       position: absolute;
-      right: 5px;
+      right: 0px;
       top: 0;
       z-index: 1;
       font-size: 24px;
       line-height: 60px; }
-  /* line 120, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 119, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_section_f .content {
     text-align: center; }
-    /* line 122, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 121, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .content p {
       font-size: 30px;
       font-weight: 300;
       line-height: 40px;
       margin-bottom: 4px; }
-    /* line 128, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 127, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .content h1 {
       color: #fefefe;
       font-size: 46px;
       font-weight: 400;
       line-height: 50px; }
-  /* line 135, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 134, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_section_f .ill_section_f {
     height: 220px;
     margin-bottom: 30px;
@@ -144,45 +143,45 @@ section {
     background-image: url(../../img/lep.png);
     background-repeat: no-repeat;
     background-position: center; }
-    /* line 143, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 142, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .ill_section_f .ill_block {
       position: absolute;
       z-index: 1;
-      right: 180px;
+      right: 175px;
       top: 90px;
       width: 230px;
       border-radius: 3px;
       background-color: #122f5b;
       padding: 7px 10px 13px; }
-      /* line 43, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+      /* line 42, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
       .wrap_section_f .ill_section_f .ill_block:before,
       .wrap_section_f .ill_section_f .ill_block:after {
         content: "";
         display: table; }
-      /* line 47, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+      /* line 46, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
       .wrap_section_f .ill_section_f .ill_block:after {
         clear: both; }
-      /* line 153, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+      /* line 152, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
       .wrap_section_f .ill_section_f .ill_block:after {
         border: 30px solid transparent;
         border-left: 20px solid #122f5b;
         position: absolute;
         top: 0;
         left: 99.9%; }
-      /* line 160, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+      /* line 159, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
       .wrap_section_f .ill_section_f .ill_block .number {
         font-size: 40px;
         font-weight: 300;
         line-height: 20px;
         float: left;
         margin-top: 10px; }
-      /* line 167, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+      /* line 166, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
       .wrap_section_f .ill_section_f .ill_block p {
         float: right;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px; }
-  /* line 176, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 175, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_section_f .form_section_f {
     width: 770px;
     margin: 0 auto;
@@ -191,36 +190,37 @@ section {
     background-color: white;
     border-radius: 3px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.25); }
-    /* line 43, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 42, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .form_section_f:before,
     .wrap_section_f .form_section_f:after {
       content: "";
       display: table; }
-    /* line 47, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 46, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .form_section_f:after {
       clear: both; }
-    /* line 185, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 184, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .form_section_f .block_f {
       width: 230px;
       float: left;
       margin-right: 20px;
       text-align: left; }
-    /* line 191, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 190, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .form_section_f h2 {
       color: #161d26;
       font-size: 17px;
       font-weight: 400;
       line-height: 20px; }
-    /* line 197, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 196, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .form_section_f p {
       color: #5d6978;
       font-size: 14px;
       font-weight: 400;
       line-height: 20px; }
-    /* line 203, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 202, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_section_f .form_section_f input {
       width: 230px;
       height: 40px;
+      margin-right: 5px;
       background-color: #fafafa;
       border: 1px solid #d3dae1;
       border-radius: 3px;
@@ -334,24 +334,30 @@ section {
   padding: 37px 40px;
   text-align: center; }
   /* line 323, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .wrap_GetAnOffer .form_section {
+    margin-bottom: 40px; }
+  /* line 326, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .wrap_GetAnOffer .form_section label:last-of-type {
+    margin-right: 0; }
+  /* line 329, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer h2 {
     color: #161d26;
     font-size: 36px;
     font-weight: 400;
     line-height: 40px;
     margin-bottom: 12px; }
-  /* line 330, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 336, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer p {
     color: #5d6978;
     font-size: 20px;
     font-weight: 300;
     line-height: 20px; }
-  /* line 336, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 342, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer .hr_line {
     position: relative;
     z-index: 1;
     margin-bottom: 50px; }
-    /* line 340, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 346, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_GetAnOffer .hr_line:after {
       position: absolute;
       width: 120px;
@@ -361,19 +367,18 @@ section {
       bottom: -23px;
       background-color: #ffc80a;
       border-radius: 1px; }
-  /* line 351, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 357, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer h3 {
     color: #161d26;
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
     margin-bottom: 10px; }
-  /* line 360, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 366, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer label,
   .wrap_GetAnOffer input[type="text"],
   .wrap_GetAnOffer input[type="tel"] {
     display: inline-block;
-    margin-bottom: 40px;
     color: #5d6978;
     font-size: 14px;
     font-weight: 400;
@@ -384,7 +389,7 @@ section {
     background-color: #fafafa;
     border: 1px solid #d3dae1;
     border-radius: 3px; }
-    /* line 373, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 378, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_GetAnOffer label:before,
     .wrap_GetAnOffer input[type="text"]:before,
     .wrap_GetAnOffer input[type="tel"]:before {
@@ -396,7 +401,7 @@ section {
       background-color: white;
       border: 1px solid #d3dae1;
       border-radius: 3px; }
-    /* line 383, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 388, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_GetAnOffer label:after,
     .wrap_GetAnOffer input[type="text"]:after,
     .wrap_GetAnOffer input[type="tel"]:after {
@@ -408,52 +413,52 @@ section {
       background-repeat: no-repeat;
       width: 10px;
       height: 9px; }
-    /* line 393, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 398, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_GetAnOffer label:hover,
     .wrap_GetAnOffer input[type="text"]:hover,
     .wrap_GetAnOffer input[type="tel"]:hover {
       background-color: #ffc80a;
       color: #161d26;
       border-color: transparent; }
-  /* line 400, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 405, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer input[type="checkbox"]:checked + label:before {
     background-color: #2680bf;
     border-color: transparent; }
-  /* line 404, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 409, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer input[type="checkbox"]:checked + label {
-    background-color: #ffc80a; }
-  /* line 407, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    background-color: #ffc80a;
+    color: #161d26;
+    border: 1px solid #ffc80a; }
+  /* line 414, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer input[type="checkbox"]:checked + label:after {
     display: block; }
-  /* line 410, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
-  .wrap_GetAnOffer label:nth-of-type(6) {
-    margin-right: 0; }
-  /* line 413, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 417, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer label {
     min-width: 80px;
     margin-right: 5px; }
-  /* line 417, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 421, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer input[type="checkbox"] {
     display: none; }
-  /* line 420, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 424, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer input[type="text"] {
     width: 360px;
     height: 40px; }
-  /* line 424, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 428, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer input[type="tel"] {
     display: inline-block;
     width: 230px;
     height: 40px;
     margin-left: 6px; }
-  /* line 431, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  /* line 435, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer input[type="text"],
   .wrap_GetAnOffer input[type="tel"] {
     padding-left: 9px; }
-    /* line 433, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    /* line 437, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
     .wrap_GetAnOffer input[type="text"]:hover,
     .wrap_GetAnOffer input[type="tel"]:hover {
-      background-color: #fafafa; }
-  /* line 437, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+      background-color: #fafafa;
+      border-color: #d3dae1; }
+  /* line 442, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
   .wrap_GetAnOffer button {
     border: none;
     width: 140px;
@@ -465,5 +470,397 @@ section {
     font-weight: 400;
     line-height: 20px;
     margin-left: 6px; }
+
+/* line 457, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.section_OurVideo > .container {
+  border-bottom: 1px solid #e5eaee; }
+
+/* line 462, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.wrap_OurVideo h2 {
+  color: #161d26;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 10px; }
+
+/* line 469, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.wrap_OurVideo p {
+  text-align: center;
+  color: #5d6978;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px; }
+
+/* line 480, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.wrap_OurVideo .item_OurVideo {
+  margin-top: 35px; }
+
+/* line 483, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.wrap_OurVideo .video {
+  display: inline-block;
+  vertical-align: top;
+  width: 560px;
+  margin-top: 88px;
+  height: 340px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.25); }
+
+/* line 491, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.wrap_OurVideo .description {
+  width: 370px;
+  margin-left: 32px;
+  padding-right: 30px;
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 499, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.wrap_OurVideo .number_item {
+  text-align: left;
+  color: #e5eaee;
+  font-family: "Roboto";
+  font-size: 140px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 6px; }
+
+/* line 508, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.wrap_OurVideo .desc_text {
+  position: relative;
+  z-index: 1;
+  padding: 30px 0; }
+  /* line 513, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .wrap_OurVideo .desc_text:before,
+  .wrap_OurVideo .desc_text:after {
+    position: absolute;
+    left: 0;
+    width: 170px;
+    height: 2px;
+    background-color: #ffc80a; }
+  /* line 520, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .wrap_OurVideo .desc_text:before {
+    top: 0; }
+  /* line 523, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .wrap_OurVideo .desc_text:after {
+    bottom: 0; }
+  /* line 526, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .wrap_OurVideo .desc_text h3 {
+    text-align: left;
+    color: #161d26;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 22px; }
+  /* line 534, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .wrap_OurVideo .desc_text p {
+    text-align: left;
+    color: #5d6978;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; }
+
+/* line 542, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.wrap_OurVideo .specifications {
+  margin-top: 29px;
+  min-height: 100px;
+  padding-left: 120px;
+  background-image: url(../../img/icon/doc.png);
+  background-repeat: no-repeat;
+  background-position: center left; }
+  /* line 549, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .wrap_OurVideo .specifications p {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px; }
+
+/* line 557, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.wrap_OurVideo .checkboxText {
+  color: #161d26;
+  padding-left: 30px;
+  background-image: url(../../img/icon/ok-b.png);
+  background-repeat: no-repeat;
+  background-position: center left; }
+
+/* line 567, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.section_OurVideo:nth-of-type(odd) .video {
+  float: right; }
+
+/* line 570, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.section_OurVideo:nth-of-type(odd) .description {
+  margin-left: 0; }
+
+/* line 575, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.sectio_thanks {
+  background-image: url(../../img/section/item-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center left; }
+
+/* line 583, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.companies_wrap h2 {
+  color: #161d26;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 25px; }
+
+/* line 592, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.companies_wrap .item_companies {
+  width: 745px;
+  margin: 0 auto; }
+
+/* line 596, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.companies_wrap ul {
+  list-style: none; }
+
+/* line 599, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.companies_wrap li {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 35px;
+  margin-right: 165px;
+  position: relative;
+  z-index: 1;
+  padding-top: 113px; }
+
+/* line 608, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.companies_wrap li:nth-of-type(3n+3) {
+  margin-right: 0; }
+
+/* line 611, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.companies_wrap a {
+  color: #5d6978;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; }
+
+/* line 619, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.companies_wrap img {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0px); }
+
+/* line 628, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.section_management {
+  background-image: url(../../img/section/item-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center left; }
+
+/* line 635, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.management_wrap h2 {
+  color: #fefefe;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 35px; }
+
+/* line 642, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.management_wrap .slider_management {
+  text-align: center; }
+
+/* line 648, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.management_wrap a {
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.25); }
+
+/* line 655, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.management_wrap .quote {
+  display: block;
+  margin: 0 auto;
+  width: 810px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 18px;
+  margin-top: 15px;
+  padding: 21px 40px; }
+  /* line 666, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .management_wrap .quote:before {
+    width: auto;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-bottom: 11px solid white; }
+  /* line 675, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .management_wrap .quote p {
+    position: relative;
+    z-index: 1;
+    color: #5d6978;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; }
+    /* line 683, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    .management_wrap .quote p:after,
+    .management_wrap .quote p:before {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      width: 23px;
+      height: 15px; }
+    /* line 691, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    .management_wrap .quote p:after {
+      left: -20px;
+      margin-top: -5px;
+      background-image: url(../../img/icon/quote1.png); }
+    /* line 696, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    .management_wrap .quote p:before {
+      right: -20px;
+      margin-top: -7px;
+      background-image: url(../../img/icon/quote2.png); }
+
+/* line 703, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.management_wrap h3, .management_wrap p {
+  color: white; }
+
+/* line 708, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.questions_wrap {
+  width: 370px; }
+  /* line 710, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap .block_questions {
+    margin-top: 100px; }
+  /* line 713, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap .mail {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #2680bf;
+    text-decoration: underline; }
+  /* line 724, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap .tel {
+    display: block;
+    margin-bottom: 15px;
+    color: #161d26;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px; }
+  /* line 734, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap .address {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #5d6978; }
+  /* line 742, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap .form_questions {
+    margin-top: 84px; }
+  /* line 747, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap h2 {
+    text-align: left;
+    color: #161d26;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 19px; }
+  /* line 755, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap textarea {
+    width: 370px;
+    height: 160px;
+    padding: 10px 15px;
+    background-color: #fafafa;
+    border: 1px solid #d3dae1;
+    border-radius: 3px;
+    color: #b9c1cb;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    resize: none;
+    margin-bottom: 10px; }
+  /* line 769, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap input {
+    padding: 10px 15px;
+    height: 40px;
+    background-color: #fafafa;
+    border: 1px solid #d3dae1;
+    border-radius: 3px;
+    color: #b9c1cb;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 10px; }
+  /* line 781, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap input[type="text"] {
+    width: 370px; }
+  /* line 784, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap input[type="tel"] {
+    margin-right: 5px;
+    width: 180px; }
+  /* line 788, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .questions_wrap button {
+    width: 180px;
+    height: 40px;
+    background-color: #2680bf;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; }
+
+/* line 800, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.section_questions {
+  position: relative;
+  z-index: 1; }
+
+/* line 804, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.map_questions {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background-image: url(../../img/map.jpg); }
+
+/* line 815, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+.footer_page {
+  background-color: #122f5b;
+  background-image: url(../../img/icon/pattern.png);
+  background-repeat: repeat;
+  padding: 20px 0; }
+  /* line 821, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .footer_page .container {
+    position: relative;
+    z-index: 1;
+    width: 970px;
+    margin: 0 auto; }
+  /* line 828, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .footer_page .logo,
+  .footer_page .gulfstream {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0; }
+    /* line 833, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    .footer_page .logo a,
+    .footer_page .gulfstream a {
+      display: inline-block; }
+  /* line 837, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .footer_page .gulfstream {
+    left: inherit;
+    right: 0; }
+  /* line 841, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .footer_page .logo {
+    top: -7px; }
+  /* line 844, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+  .footer_page .copy {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    text-align: center; }
+    /* line 852, D:/github/viktor_gnativ_test/src/desktop/css/sass/style.scss */
+    .footer_page .copy a {
+      display: inline-block;
+      color: #2680bf;
+      line-height: 20px;
+      font-size: 12px;
+      text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
