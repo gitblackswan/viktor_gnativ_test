@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="css/libs/normalize.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic" rel="stylesheet">
+    <script>
+    !function(e,t,n){function r(){for(;u[0]&&"loaded"==u[0][l];)o=u.shift(),o[f]=!a.parentNode.insertBefore(o,a)}for(var i,s,o,u=[],a=e.scripts[0],f="onreadystatechange",l="readyState";i=n.shift();)s=e.createElement(t),"async"in a?(s.async=!1,e.head.appendChild(s)):a[l]?(u.push(s),s[f]=r):e.write("<"+t+' src="'+i+'" defer></'+t+">"),s.src=i}(document,"script",
+    ["https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js",
+    "js/init.js"])
+    </script>
 </head>
 <body>
 <!--    <div id="maket"></div>-->
+    <section class="section_menu">
+        <div class="container">
+            <div>
+                <a class="close_menu" href="#"></a>
+                <ul>
+                    <li><a href="#">меню</a></li>
+                    <li><a href="#">меню</a></li>
+                    <li><a href="#">меню</a></li>
+                    <li><a href="#">меню</a></li>
+                    <li><a href="#">меню</a></li>
+                    <li><a href="#">меню</a></li>
+                    <li><a href="#">меню</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <section class="section_f">
         <div class="container">
             <div class="wrap_section_f">
@@ -46,7 +59,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
     <section class="section_history">
         <div class="container">
@@ -60,7 +72,20 @@
                             <p>Главный энергетик</p>
                         </div>
                    </div>
-                    
+    <!--                    <div class="item_history">
+                            <img src="img/slider_his/item-1.jpg" alt="">
+                            <div class="author_history">
+                                <h3>Виктор Алексеевич </h3>
+                                <p>Главный энергетик</p>
+                            </div>
+                       </div>
+                       <div class="item_history">
+                            <img src="img/slider_his/item-1.jpg" alt="">
+                            <div class="author_history">
+                                <h3>Виктор Алексеевич </h3>
+                                <p>Главный энергетик</p>
+                            </div>
+                       </div> -->
                 </div>
                 <div class="slider_history_dots">
                    <div class="item_history_dots">
@@ -253,65 +278,175 @@
         </div>
     </section>
     <section class="section_OurVideo">
-    <div class="container">
-        <div class="wrap_OurVideo">
+        <div class="container">
             <div class="wrap_OurVideo">
-                <div class="item_OurVideo">
-                    <div class="video"><img src="img/video/item.png" alt=""></div>
-                    <div class="description">
-                        <p class="number_item">06</p>
-                        <div class="desc_text">
-                            <h3>Договор <br> электроснабжения</h3>
-                            <p>Повторная заявка на ТУ не принимается, пока не выполнена действующая... и еще 10 нюансов в видео</p>
-                        </div>
-                        <div class="specifications">
-                            <p>На выходе вы должны получить:</p>
-                            <p class="checkboxText">Перечень услуг на этапе</p>
-                            <p class="checkboxText">Технические условия</p>
+                <div class="wrap_OurVideo">
+                    <div class="item_OurVideo">
+                        <div class="video"><img src="img/video/item.png" alt=""></div>
+                        <div class="description">
+                            <p class="number_item">06</p>
+                            <div class="desc_text">
+                                <h3>Договор <br> электроснабжения</h3>
+                                <p>Повторная заявка на ТУ не принимается, пока не выполнена действующая... и еще 10 нюансов в видео</p>
+                            </div>
+                            <div class="specifications">
+                                <p>На выходе вы должны получить:</p>
+                                <p class="checkboxText">Перечень услуг на этапе</p>
+                                <p class="checkboxText">Технические условия</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>  
+                </div>  
+            </div>
         </div>
-    </div>
+    </section>
+    <section class="section_GetAnOffer section_form">
+        <div class="container">
+            <div class="wrap_GetAnOffer">
+                <h2>Заполните форму</h2>
+                <p class="hr_line">и наш менеджер сориентирует вас по цене в течение 25 минут</p>
+                <div class="form_GetAnOffer">
+                    <form action="">
+                        <div class="form_section form_section-w">
+                            <h3>Какие изделия будут входить в комплекс?</h3>
+                            <input type="checkbox" id="section_form1">
+                            <label for="section_form1">
+                                 Подключение под ключ
+                            </label>
+                            <input type="checkbox" id="section_form2">
+                            <label for="section_form2">
+                                 Разработка проекта
+                            </label>
+                            <input type="checkbox" id="section_form3">
+                            <label for="section_form3">
+                                 Акт разграничение
+                            </label>
+                            <input type="checkbox" id="section_form4">
+                            <label for="section_form4">
+                                 Технические условия
+                            </label>
+                            <input type="checkbox" id="section_form5">
+                            <label for="section_form5">
+                                 Монтажные работы
+                            </label>
+                            <input type="checkbox" id="section_form6">
+                            <label for="section_form6">
+                                 Акт допуска
+                            </label>
+                            <input type="checkbox" id="section_form7">
+                            <label for="section_form7">
+                                 Разрешение на мощность
+                            </label>
+                            <input type="checkbox" id="section_form8">
+                            <label for="section_form8">
+                                 Технический отчет
+                            </label>
+                            <input type="checkbox" id="section_form9">
+                            <label for="section_form9">
+                                 Договор с Энергосбытом
+                            </label>
+                        </div>
+                         <div class="form_section">
+                            <h3>Выберите тип вашего объекта</h3>
+                            <input type="checkbox" id="section_form10">
+                            <label for="section_form10">
+                                 Квартира
+                            </label>
+                            <input type="checkbox" id="section_form11">
+                            <label for="section_form11">
+                                 Офисное помещение
+                            </label>
+                            <input type="checkbox" id="section_form12">
+                            <label for="section_form12">
+                                 Административное здание
+                            </label>
+                            <input type="checkbox" id="section_form13">
+                            <label for="section_form13">
+                                 Торговый центр
+                            </label>
+                        </div>
+                        <div class="form_section">
+                            <h3>Выберите тип вашего объекта</h3>
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="tel" placeholder="Телефон">
+                            <button type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>  
+            </div>
+        </div>
     </section>
     <section class="section">
         <div class="container">
-            <div class="companies_wrap">
+            <div class="companies_wrap ">
                 <h2>Компании и объекты, <br> которые заказывали услуги у нас</h2>
-                <div class="slider_companies">
-                    <div class="item_companies">
-                       <ul>
-                           <li>
-                                <a href="#"><img src="img/slider_com/item-1.png" alt="">ОАО «Вымпелком»</a>
-                           </li>
-                           <li>
-                                <a href="#"><img src="img/slider_com/item-2.png" alt="">ОАО «Вымпелком»</a>
-                           </li>
-                           <li>
-                                <a href="#"><img src="img/slider_com/item-3.png" alt="">ОАО «Вымпелком»</a>
-                           </li>
-                           <li>
-                                <a href="#"><img src="img/slider_com/item-4.png" alt="">ОАО «Вымпелком»</a>
-                           </li>
-                           <li>
-                                <a href="#"><img src="img/slider_com/item-5.png" alt="">ОАО «Вымпелком»</a>
-                           </li>
-                           <li>
-                                <a href="#"><img src="img/slider_com/item-6.png" alt="">ОАО «Вымпелком»</a>
-                           </li>
-                           <li>
-                                <a href="#"><img src="img/slider_com/item-7.png" alt="">ОАО «Вымпелком»</a>
-                           </li>
-                           <li>
-                                <a href="#"><img src="img/slider_com/item-8.png" alt="">ОАО «Вымпелком»</a>
-                           </li>
-                           <li>
-                                <a href="#"><img src="img/slider_com/item-9.png" alt="">ОАО «Вымпелком»</a>
-                           </li>
-                       </ul>
-                       
+                <div class="rewievs">
+                    <div class="slider_companies">
+                        <div class="item_companies">
+                           <ul>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-1.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-2.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-3.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-4.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-5.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-6.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-7.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-8.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-9.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                           </ul>
+                        </div>
+                        <div class="item_companies">
+                           <ul>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-1.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-2.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-3.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-4.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-5.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-6.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-7.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-8.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                               <li>
+                                    <a href="#"><img src="img/slider_com/item-9.png" alt="">ОАО «Вымпелком»</a>
+                               </li>
+                           </ul>
+                        </div>
                     </div>
+                    <a id="sld2r" class="control_arrow" href="#"></a>
+                    <a id="sld2l" class="control_arrow" href="#"></a>
                 </div>
             </div>
         </div>

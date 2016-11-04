@@ -5,9 +5,9 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var bounds = new google.maps.LatLngBounds();
-    var center = new google.maps.LatLng(55.77556115429107, 37.671939364417965);
+    var center = new google.maps.LatLng(55.872260, 37.689158);
     bounds.extend(center);
-    var loc = new google.maps.LatLng(55.77556115429107, 37.669339364417965);
+    var loc = new google.maps.LatLng(55.872260, 37.689158);
     bounds.extend(loc);
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
@@ -30,65 +30,7 @@ function init() {
         // This is where you would paste any style found on Snazzy Maps.
         styles:
 
-            [{
-            "featureType": "administrative",
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "color": "#444444"
-            }]
-        }, {
-            "featureType": "landscape",
-            "elementType": "all",
-            "stylers": [{
-                "color": "#f2f2f2"
-            }]
-        }, {
-            "featureType": "poi",
-            "elementType": "all",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "poi.business",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "visibility": "on"
-            }]
-        }, {
-            "featureType": "road",
-            "elementType": "all",
-            "stylers": [{
-                "saturation": -100
-            }, {
-                "lightness": 45
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "all",
-            "stylers": [{
-                "visibility": "simplified"
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "transit",
-            "elementType": "all",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "water",
-            "elementType": "all",
-            "stylers": [{
-                "color": "#b4d4e1"
-            }, {
-                "visibility": "on"
-            }]
-        }]
+            [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]
     };
 
     // Get the HTML DOM element that will contain your map 
@@ -102,7 +44,7 @@ function init() {
         position: loc,
         map: map,
         icon: {
-            url: '../img/point.png',
+            url: '../img/icon/point.png',
             size: new google.maps.Size(47, 71),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(23, 71)
@@ -110,5 +52,5 @@ function init() {
         title: 'Fortis'
     });
 
-    map.fitBounds(bounds);//autozoom
+    // map.fitBounds(bounds); //autozoom
 }

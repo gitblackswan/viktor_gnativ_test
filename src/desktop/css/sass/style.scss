@@ -58,6 +58,37 @@ section{
     @include sec();
 }
 
+
+h1 {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+a {
+    color: #2680bf;
+    transition: all .25s;
+    &:hover {
+        color: #ffc80a;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    &:focus {
+        border: 1px solid #ffc80a !important;
+        color: #161d26;
+    }
+}
+
 #maket {
     position: absolute;
     top: 0px;
@@ -69,8 +100,48 @@ section{
     z-index: 10;  
 }
 
+// bx slider
+ .control_arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -5px;
+    a {
+        display: block;
+        text-indent: -99999px;
+        width: 12px;
+        height: 22px;
+        
+    }
+    .bx-prev {
+        background-image: url(../img/icon/arrow-back.png);
+        &:hover {
+            background-image: url(../img/icon/arrow-back-h.png);
+        }
+    }
+    .bx-next {
+        background-image: url(../img/icon/arrow-next.png);
+        &:hover {
+            background-image: url(../img/icon/arrow-next-h.png);
+        }
+    }
+}
+#sld2r {
+    right: 0;
+}
+#sld2l{
+    left: 0;
+}
+
+.section_menu {
+    background-color: #122f5b;
+    background-image: url(../img/icon/pattern.png);
+    background-repeat: repeat;
+    background-size: inherit !important;
+}
+
 .section_f {
-    background-image: url(../../img/section/item-1.jpg);
+    background-image: url(../img/section/item-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -91,9 +162,10 @@ section{
                 width: 26px;
                 height: 20px;
                 
-                background-image: url(../../img/icon/menu.png);
+                background-image: url(../img/icon/menu.png);
                 background-repeat: no-repeat;
                 &:hover{
+                    background-image: url(../img/icon/menu-h.png);
                 }
             }
         }
@@ -106,6 +178,7 @@ section{
             }
         }
         .tel_page {
+            color: white;
             position: absolute;
             right: 0px;
             top: 0;
@@ -113,6 +186,7 @@ section{
             font-size: 24px;
             line-height: 60px;
             &:hover{
+                color: #ffc80a;
             }
         }
     }
@@ -136,7 +210,7 @@ section{
         margin-bottom: 30px;
         position: relative;
         z-index: 1;
-        background-image: url(../../img/lep.png);
+        background-image: url(../img/lep.png);
         background-repeat: no-repeat;
         background-position: center;
         .ill_block {
@@ -219,13 +293,18 @@ section{
             font-size: 14px;
             font-weight: 400;
             line-height: 20px;
-            
+            &:hover {
+                box-shadow: inset 0 -2px 0 #e59900;
+            }
+            &:active {
+                background-color: #e69900;
+            }
         }
     }
 }
 
 .section_history {
-    background-image: url(../../img/section/item-2.jpg);
+    background-image: url(../img/section/item-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -240,7 +319,7 @@ section{
         top: -48px;
         width: 46px;
         height: 30px;
-        background-image: url(../../img/icon/quote.png);
+        background-image: url(../img/icon/quote.png);
     }
     h2 {       
         color: #fefefe;
@@ -308,7 +387,7 @@ section{
 }
 
 .section_GetAnOffer {
-    background-image: url(../../img/section/item-3.jpg);
+    background-image: url(../img/section/item-3.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -390,7 +469,7 @@ section{
             display: none;
             left: 14px;
             top: 16px;
-            background-image: url(../../img/icon/ok.png);
+            background-image: url(../img/icon/ok.png);
             background-repeat: no-repeat;
             width: 10px;
             height: 9px;
@@ -416,6 +495,7 @@ section{
     }
     label {
         min-width: 80px;
+        cursor: pointer;
         margin-right: 5px;
     } 
     input[type="checkbox"] {
@@ -450,6 +530,12 @@ section{
         font-weight: 400;
         line-height: 20px;
         margin-left: 6px;
+        &:hover {
+            box-shadow: inset 0 -2px 0 #1c578d;
+        }
+        &:active {
+            background-color: #1c578d;
+        }
     }
 }
 
@@ -543,7 +629,7 @@ section{
         margin-top: 29px;
         min-height: 100px;
         padding-left: 120px;
-        background-image: url(../../img/icon/doc.png);
+        background-image: url(../img/icon/doc.png);
         background-repeat: no-repeat;
         background-position: center left;
         p {
@@ -557,7 +643,7 @@ section{
     .checkboxText {
         color: #161d26;
         padding-left: 30px;
-        background-image: url(../../img/icon/ok-b.png);
+        background-image: url(../img/icon/ok-b.png);
         background-repeat: no-repeat;
         background-position: center left;
     }
@@ -572,14 +658,45 @@ section{
     }
 }
 
-.sectio_thanks {
-    background-image: url(../../img/section/item-4.jpg);
+
+
+.section_form {
+    background-image: url(../img/section/item-4.jpg);
     background-repeat: no-repeat;
     background-position: center left;
 }
 
+.section_form .wrap_GetAnOffer {
+    width: 830px;
+    left: 50%;
+    margin-left: -415px;
+}
+
+.form_section-w label {
+    width: 245px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form_section-w label:nth-of-type(2),
+.form_section-w label:nth-of-type(5),
+.form_section-w label:nth-of-type(8), {
+    width: 240px;
+}
+
+.form_section-w label:nth-of-type(3n+3) {
+    margin-right: 0;
+}
+
+.section_form .wrap_GetAnOffer button {
+    margin-left: 5px
+}
+
+
 
 .companies_wrap {
+    position: relative;
+    z-index: 1;
     h2 {
         color: #161d26;
         font-size: 36px;
@@ -587,14 +704,13 @@ section{
         line-height: 40px;
         margin-bottom: 25px;
     }
-    .slider_companies {
-    }
     .item_companies {
         width: 745px;
         margin: 0 auto;
     }
     ul {
         list-style: none;
+        text-align: center
     }
     li {
         display: inline-block;
@@ -626,7 +742,7 @@ section{
 }
 
 .section_management {
-    background-image: url(../../img/section/item-5.jpg);
+    background-image: url(../img/section/item-5.jpg);
     background-repeat: no-repeat;
     background-position: center left;
 }
@@ -691,12 +807,12 @@ section{
             &:after {
                 left: -20px;
                 margin-top: -5px;
-                background-image: url(../../img/icon/quote1.png);
+                background-image: url(../img/icon/quote1.png);
             }
             &:before {
                 right: -20px;
                 margin-top: -7px;
-                background-image: url(../../img/icon/quote2.png);
+                background-image: url(../img/icon/quote2.png);
             }
         }
     }
@@ -707,8 +823,20 @@ section{
 
 .questions_wrap {
     width: 370px;
+    position: relative;
+    z-index: 1;
+    &:before {
+        position: absolute;
+        z-index: -1;
+        top: -100px;
+        left: -65px;
+        width: 140px;
+        height: 204px;
+        background-image: url(../img/icon/pie.png);
+    }
+    
     .block_questions {
-       margin-top: 100px;
+        margin-top: 100px;
     }
     .mail {
         display: block;
@@ -719,6 +847,7 @@ section{
         color: #2680bf;
         text-decoration: underline;
         &:hover{
+            color: #ffc80a;
         }
     }
     .tel {
@@ -795,6 +924,12 @@ section{
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
+        &:hover {
+            box-shadow: inset 0 -2px 0 #1c578d;
+        }
+        &:active {
+            background-color: #1c578d;
+        }
     }
 }
 .section_questions {
@@ -808,14 +943,13 @@ section{
     z-index: 1;
     right: 0;
     top: 0;
-    background-image: url(../../img/map.jpg);
+    background-image: url(../img/map.jpg);
 }
 
 
 .footer_page {
-    
     background-color: #122f5b;
-    background-image: url(../../img/icon/pattern.png);
+    background-image: url(../img/icon/pattern.png);
     background-repeat: repeat;
     padding: 20px 0;
     .container {
@@ -855,7 +989,9 @@ section{
             line-height: 20px;
             font-size: 12px;
             text-decoration: underline;
-            
+            &:hover {
+                color: #ffc80a;
+            }
         }
     }
 }
