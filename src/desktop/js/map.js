@@ -44,7 +44,7 @@ function init() {
         position: loc,
         map: map,
         icon: {
-            url: '../img/icon/point.png',
+            url: 'img/icon/point.png',
             size: new google.maps.Size(47, 71),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(23, 71)

@@ -11,22 +11,18 @@
 </head>
 <body>
 <!--    <div id="maket"></div>-->
-    <section class="section_menu">
-        <div class="container">
-            <div>
-                <a class="close_menu" href="#"></a>
-                <ul>
-                    <li><a href="#">меню</a></li>
-                    <li><a href="#">меню</a></li>
-                    <li><a href="#">меню</a></li>
-                    <li><a href="#">меню</a></li>
-                    <li><a href="#">меню</a></li>
-                    <li><a href="#">меню</a></li>
-                    <li><a href="#">меню</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <div class="menu_page">
+        <a class="close_menu" href="#"></a>
+        <ul>
+            <li><a href="#">меню</a></li>
+            <li><a href="#">меню</a></li>
+            <li><a href="#">меню</a></li>
+            <li><a href="#">меню</a></li>
+            <li><a href="#">меню</a></li>
+            <li><a href="#">меню</a></li>
+            <li><a href="#">меню</a></li>
+        </ul>
+    </div>
     <section class="section_f">
         <div class="container">
             <div class="wrap_section_f">
@@ -65,14 +61,15 @@
             <div class="wrap_history">
                <h2>Истории наших заказчиков</h2>
                 <div class="slider_history">
-                   <div class="item_history">
-                        <img src="img/slider_his/item-1.jpg" alt="">
-                        <div class="author_history">
-                            <h3>Виктор Алексеевич </h3>
-                            <p>Главный энергетик</p>
-                        </div>
-                   </div>
-    <!--                    <div class="item_history">
+                    <div class="sliders_history">
+                        <div class="item_history">
+                            <img src="img/slider_his/item-1.jpg" alt="">
+                            <div class="author_history">
+                                <h3>Виктор Алексеевич </h3>
+                                <p>Главный энергетик</p>
+                            </div>
+                       </div>
+<!--                        <div class="item_history">
                             <img src="img/slider_his/item-1.jpg" alt="">
                             <div class="author_history">
                                 <h3>Виктор Алексеевич </h3>
@@ -86,12 +83,17 @@
                                 <p>Главный энергетик</p>
                             </div>
                        </div> -->
+                    </div>
+                    <div class="slider_history_dots">
+                       <div class="item_history_dots">
+                           <a href="#"><img src="img/slider_his/dots/item-1.png" alt=""></a>
+                       </div>
+                    </div>
+                    <div class="control_arrows">
+                        <a id="sld2r" class="control_arrow bx-prev" href="#"></a>
+                        <a id="sld2l" class="control_arrow bx-next" href="#"></a>
+                    </div>
                 </div>
-                <div class="slider_history_dots">
-                   <div class="item_history_dots">
-                       <a href="#"><img src="img/slider_his/dots/item-1.png" alt=""></a>
-                   </div>
-                </div>  
             </div>
         </div>
     </section>
@@ -445,8 +447,10 @@
                            </ul>
                         </div>
                     </div>
-                    <a id="sld2r" class="control_arrow" href="#"></a>
-                    <a id="sld2l" class="control_arrow" href="#"></a>
+                    <div class="control_arrows">
+                        <a id="sld1r" class="control_arrow bx-prev" href="#"></a>
+                        <a id="sld1l" class="control_arrow bx-next" href="#"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -487,7 +491,7 @@
                 </div>
             </div>
         </div>
-        <div class="map_questions"></div>
+        <div id="map" class="map_questions"></div>
     </section>
     <footer class="footer_page">
        <div class="container">
@@ -499,5 +503,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
