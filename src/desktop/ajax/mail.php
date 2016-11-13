@@ -18,7 +18,7 @@ $location = $_POST['location'];
 $url = $_POST['url'];
 $title = $_POST['title'];
 
-$subject = 'Заявка '.$title;	
+$subject = 'Заявка '.$title;
 
 //$headers= "From: noreply <noreply@noreply.ru>\r\n";
 //$headers.= "Reply-To: noreply <noreply@noreply.ru>\r\n";

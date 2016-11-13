@@ -44,12 +44,13 @@
                    </div>
                 </div>
                 <div class="form_section_f">
-                    <form action="">
+                    <form action="ajax/mail.php" method="post">
                         <div class="block_f">
                             <h2>Получите консультацию</h2>
                             <p>от инженера с опытом 16 лет</p>
                         </div>
-                        <input type="text" placeholder="Телефон">
+                        <input type="text" name="phone" placeholder="Телефон">
+                        <input type="hidden" name="frmid" value="Получить консультацию">
                         <button type="submit">Получить консультацию</button>
                     </form>
                 </div>
@@ -503,7 +504,17 @@
             </div>
         </div>
     </footer>
+
+
+    <div id="hidden-box">
+        <div id="form-error-pop">
+            <div id="form-error-text"></div>
+        </div>
+    </div>
+    <div id="okgo">
+        <h2>Заявка принята</h2>
+        <p>Мы свяжемся с Вами в ближайшее время!</p>
+    </div>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="js/map.js"></script>
 </body>
 </html>

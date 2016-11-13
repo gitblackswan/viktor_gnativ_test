@@ -61,8 +61,8 @@ function initalize() {
         }
         for (var i, s, o, u = [], a = e.scripts[0], f = "onreadystatechange", l = "readyState"; i = n.shift();) s = e.createElement(t), "async" in a ? (s.async = !1, e.head.appendChild(s)) : a[l] ? (u.push(s), s[f] = r) : e.write("<" + t + ' src="' + i + '" defer></' + t + ">"), s.src = i
     }(document, "script", ["https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
-        "js/libs/jquery.rollingslider.js",
         "js/libs.js",
+        "js/map.js",
         "js/main.js",
     ]);
     console.log('js-append');

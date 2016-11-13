@@ -90,6 +90,47 @@ textarea:focus {
   opacity: 0.5;
   z-index: 10; }
 
+.arcticmodal-container, .arcticmodal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000; }
+
+.arcticmodal-container {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse; }
+
+:first-child + html .arcticmodal-container {
+  height: 100%; }
+
+.arcticmodal-container_i {
+  margin: 0 auto;
+  height: 100%; }
+
+.arcticmodal-container_i2 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  vertical-align: middle; }
+
+#hidden-box {
+  display: none; }
+
+.error-input {
+  border: 1px solid red !important; }
+
+#okgo {
+  color: #fff; }
+
+#form-error-text {
+  font-size: 28px;
+  color: #fff; }
+
 .control_arrows {
   position: absolute;
   z-index: 1;
@@ -178,6 +219,7 @@ textarea:focus {
   .wrap_section_f .header_page {
     position: relative;
     z-index: 1;
+    text-align: center;
     margin-bottom: 65px; }
     .wrap_section_f .header_page .menu {
       position: absolute;
@@ -196,7 +238,7 @@ textarea:focus {
           transform: rotate(-180deg);
           background-image: url(../img/icon/menu-h.png); }
     .wrap_section_f .header_page .logo_page {
-      display: block;
+      display: inline-block;
       margin: 0 auto;
       text-align: center;
       line-height: 1; }
